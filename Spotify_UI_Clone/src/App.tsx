@@ -1,11 +1,16 @@
 import './App.css'
+import LeftSection from './components/LeftSection/LeftSection'
+import RightSection from './components/RightSection/RightSection'
 
 function App() {
-
-
   return (
     <>
-      <h1 className='text-7xl bg-red-500 p-5'>Spotify Clone UI</h1>
+      <div className='main w-full h-screen bg-black'>
+        <div className='hero w-full h-[90%] flex flex-row p-2 gap-2'>
+          <LeftSection />
+          <RightSection />
+        </div>
+      </div>
     </>
   )
 }
