@@ -41,6 +41,7 @@ const Rightupper = () => {
             </div>
           </div>
         </div>
+        {/* TOODO : start from the made for you part */}
       </div>
     </>
   );
