@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
+import Footer from "../Footer/Footer";
+import Rightupper from "./Rightupper";
 
 const RightSection = () => {
   return (
     <>
-        <div className='w-[82%] rounded-lg bg-blue-700 h-full'>
-
-        </div>
+      <div className="w-[83%] h-full relative flex flex-col px-2 gap-3">
+        <Rightupper />
+        <Footer />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default RightSection
+export default RightSection;

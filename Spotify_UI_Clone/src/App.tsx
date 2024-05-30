@@ -8,7 +8,7 @@ function App() {
     <>
       <div className='main w-full h-screen bg-black'>
         <Navbar />
-        <div className='hero w-full h-[92%] flex flex-row p-2 gap-2'>
+        <div className='hero w-full h-[92%] flex flex-row gap-2'>
           <LeftSection />
           <RightSection />
         </div>

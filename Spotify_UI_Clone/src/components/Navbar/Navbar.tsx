@@ -12,7 +12,7 @@ import { PiStarFour } from "react-icons/pi";
 const Navbar = () => {
   return (
     <>  
-      <div className="w-full h-[8%] px-5 flex items-center">
+      <div className="w-full h-[8%] px-5 flex flex-wrap items-center">
         <div className="fpart h-full w-[50%] flex justify-start items-center gap-3">
           <div className="flex flex-row items-center w-[33%] gap-3 text-white">
             <LuLibrary className="text-2xl" />

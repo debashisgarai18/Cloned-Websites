@@ -55,7 +55,7 @@ const LeftSection = () => {
   return (
     <>
       <div className="w-[17%] h-full text-[#898989]">
-        <div className="arr w-full h-fit flex flex-col gap-5 px-3 py-2">
+        <div className="arr w-full h-fit flex flex-wrap flex-col gap-5 px-3 py-2">
           {
             warr.map((e) => ( 
               <div className="flex flex-row items-center justify-between hover:border-[0.5px] hover:border-white hover:text-white hover:rounded-md px-3 py-2 cursor-pointer">
@@ -68,7 +68,7 @@ const LeftSection = () => {
             ))  
           }
         </div>
-        <div className="narr w-full h-fit flex flex-col gap-5 px-3 py-2">
+        <div className="narr w-full h-fit flex flex-wrap flex-col gap-5 px-3 py-2">
           {
             noarr.map((e) => (  
                 <div className="flex flex-row items-center gap-4 hover:border-[0.5px] hover:text-white hover:border-white hover:rounded-md w-full px-3 py-2 cursor-pointer">
