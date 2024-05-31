@@ -557,11 +557,12 @@ const Rightupper = () => {
         <div className="right-footer w-full mt-14 h-fit mb-5">
             <div className="w-full h-fit flex flex-col flex-wrap mb-5">
               <div className="gmenu h-fit w-[60%] grid grid-cols-4">
-
+                {/* TODO : need to upadate this part */}
               </div>
               <div className="ficons h-fit w-[60%]"></div>
             </div>
         </div>
+        {/* make all the parts containerized */}
       </div>
     </>
   );
