@@ -19,11 +19,11 @@ const Navbar = () => {
             <h1 className="text-lg">My Library</h1>
           </div>
           <div className="flex flex-row w-[33%]">
-            <button className="flex flex-row items-center gap-3 w-[50%] hover:bg-[#111111] px-3 py-2 rounded-md text-[#898989] hover:text-white">
+            <button className="flex flex-row items-center gap-3 w-[50%] focus:bg-[#111111] px-3 py-2 rounded-md text-[#898989] hover:text-white focus:text-white">
               <GoHomeFill className="text-2xl" />
               <h1 className="text-lg">Home</h1>
             </button>
-            <button className="flex flex-row items-center gap-3 w-[50%] hover:bg-[#111111] px-3 py-2 rounded-md text-[#898989] hover:text-white">
+            <button className="flex flex-row items-center gap-3 w-[50%] focus:bg-[#111111] px-3 py-2 rounded-md text-[#898989] hover:text-white focus:text-white">
               <PiStarFour className="text-2xl" />
               <h1 className="text-lg">Discover</h1>
             </button>
