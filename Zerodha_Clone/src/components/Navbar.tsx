@@ -4,7 +4,7 @@ import { FiMenu } from "react-icons/fi";
 const nav : Array<string> = ["Signup", "About", "Products", "Pricing", "Support"]
 const Navbar = () => {
   return (  
-    <div className='w-full h-fit bg-white fixed top-0 py-5 px-[7rem] flex flex-wrap justify-between items-center shadow-md'>
+    <div className='w-full h-fit bg-white fixed top-0 py-5 px-[25rem] flex flex-wrap justify-between items-center shadow-md'>
         <div className='logo'>
             <img src="https://zerodha.com/static/images/logo.svg" className='w-[7.8rem] cursor-pointer'/>
         </div>
