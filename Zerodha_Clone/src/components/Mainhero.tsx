@@ -61,7 +61,7 @@ const Mainhero = () => {
             </div>
           </div>
           {/* trust with confidence part */}
-          <div className='w-full h-fit mt-[7rem] flex flex-wrap gap-2 mb-2'>
+          <div className='trust-confid w-full h-fit mt-[7rem] flex flex-wrap gap-2 mb-2'>
             <div className='trust-text w-[45%] h-fit flex flex-col px-[6.5rem] gap-[3rem]'>
               <h1 className='text-3xl'>Trust With Confidence</h1>
               {
@@ -76,10 +76,30 @@ const Mainhero = () => {
             <div className='trust-image w-[53%] h-fit'>
               <img src="https://zerodha.com/static/images/ecosystem.png" className=''/>
               <div className="flex justify-center gap-3">
-                <button className="flex justify-center gap-1 items-center text-[#387fd1] hover:text-[#313131]">Explore our products <TiArrowRight className="text-2xl"/></button>
-                <button className="flex justify-center gap-1 items-center text-[#387fd1] hover:text-[#313131]">Try Kite demo <TiArrowRight className="text-2xl"/></button>
+                <button className="flex justify-center gap-1 items-center text-[#387fd1] hover:text-[#313131] tracking-wide font-semibold">Explore our products <TiArrowRight className="text-2xl"/></button>
+                <button className="flex justify-center gap-1 items-center text-[#387fd1] hover:text-[#313131] tracking-wide font-semibold">Try Kite demo <TiArrowRight className="text-2xl"/></button>
               </div>
             </div>
+          </div>
+          {/* Unbeatable pricing */}
+          <div className="w-full h-fit mt-[7rem] flex flex-row flex-wrap items-center justify-center gap-[6rem] mb-3 px-[7rem]">
+              <div className="text-part w-[45%] h-fit flex flex-col flex-wrap justify-center gap-[2rem]">
+                <div className="text-3xl">Unbeatable pricing</div>
+                <div className="text-lg leading-relaxed text-[#808080]">We pioneered the concept of discount broking and price transparency in India. Flat fees and no hidden charges.</div>
+                <button className="flex gap-1 text-[#387fd1] hover:text-[#313131] tracking-wide font-semibold">See Pricing <TiArrowRight className="text-2xl"/></button>
+              </div>
+              <div className="icon-part w-[45%] flex flex-wrap justify-center items-center h-fit">
+                <div className="flex flex-wrap flex-row w-[90%] justify-center items-center h-[10rem]">
+                  <div className="w-[50%] h-full border-2 border-black flex flex-col items-center justify-center gap-[1.5rem] px-[1.5rem]">
+                    <div className="text-5xl">₹0</div>
+                    <div className="text-center leading-relaxed text-[#808080]">Free equity delivery and direct mutual funds</div>
+                  </div>
+                  <div className="w-[50%] h-full border-2 border-black flex flex-col items-center gap-[1.5rem] pt-[1.5rem]">
+                    <div className="text-5xl">₹20</div>
+                    <div className="text-center text-[#808080]">Intraday and F&O</div>
+                  </div>
+                </div>
+              </div>
           </div>
         </div>
     </div>
