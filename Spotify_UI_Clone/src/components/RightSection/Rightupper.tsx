@@ -1,6 +1,5 @@
 import React from "react";
 import { BsFilterSquare } from "react-icons/bs";
-import { FaPlay } from "react-icons/fa6";
 import PopularArtists from "./Sections/PopularArtists";
 import PopularAlbums from "./Sections/PopularAlbums";
 import PopularRadio from "./Sections/PopularRadio";
@@ -8,6 +7,8 @@ import FeaturedCharts from "./Sections/FeaturedCharts";
 import SpotifyPlaylists from "./Sections/SpotifyPlaylists";
 import Podcasts from "./Sections/Podcasts";
 import Episodes from "./Sections/Episodes";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
 
 // the interfaces declared
 interface artist {
@@ -19,7 +20,6 @@ interface common {
   name: string;
   desc: string;
 }
-
 
 // the arrays declared
 const artistArr: Array<artist> = [
@@ -208,46 +208,58 @@ const podcastArr: Array<common> = [
     desc: "TeluguOne",
   },
 ];
-const trendingArr : Array<common> = [
+const trendingArr: Array<common> = [
   {
-    img : 'https://i.scdn.co/image/ab67656300005f1fe46079c9a5b7c544c6922ac9',
-    name : 'Welcome Back - RJ Balaji',
-    desc : 'June 2021 - 15 min'
+    img: "https://i.scdn.co/image/ab67656300005f1fe46079c9a5b7c544c6922ac9",
+    name: "Welcome Back - RJ Balaji",
+    desc: "June 2021 - 15 min",
   },
   {
-    img : 'https://i.scdn.co/image/ab67656300005f1f099a357ed0a2a39424f2903d',
-    name : '#73: Hotel of Horrors',
-    desc : 'June 2021 - 93 min'
+    img: "https://i.scdn.co/image/ab67656300005f1f099a357ed0a2a39424f2903d",
+    name: "#73: Hotel of Horrors",
+    desc: "June 2021 - 93 min",
   },
   {
-    img : 'https://i.scdn.co/image/ab67656300005f1f21f7ead44047173302bc912e',
-    name : 'Anubis: God of Death - 1',
-    desc : 'June 2021 - 16 min'
+    img: "https://i.scdn.co/image/ab67656300005f1f21f7ead44047173302bc912e",
+    name: "Anubis: God of Death - 1",
+    desc: "June 2021 - 16 min",
   },
   {
-    img : 'https://i.scdn.co/image/ab67656300005f1ff875734f742a55ac2dd62637',
-    name : 'Anubis: God of Death - 2',
-    desc : 'June 2021 - 13 min'
+    img: "https://i.scdn.co/image/ab67656300005f1ff875734f742a55ac2dd62637",
+    name: "Anubis: God of Death - 2",
+    desc: "June 2021 - 13 min",
   },
   {
-    img : 'https://i.scdn.co/image/ab67656300005f1f36dbb0b2d65004488fcc322f',
-    name : 'Mahabharata Episode1 : Beginnings',
-    desc : 'August 2014 - 24 min'
+    img: "https://i.scdn.co/image/ab67656300005f1f36dbb0b2d65004488fcc322f",
+    name: "Mahabharata Episode1 : Beginnings",
+    desc: "August 2014 - 24 min",
   },
   {
-    img : 'https://i.scdn.co/image/ab67656300005f1f65fc4856285f7fcb49c08d43',
-    name : 'Relaxing Rain Sounds',
-    desc : 'Aug 2019 - 122 min'
-  },  
-]
+    img: "https://i.scdn.co/image/ab67656300005f1f65fc4856285f7fcb49c08d43",
+    name: "Relaxing Rain Sounds",
+    desc: "Aug 2019 - 122 min",
+  },
+];
 
 // now the footer part
-const base : {[key : string] : Array<string>} = {
-  "Company" : ["About" , "Jobs", "For the Record"],
-  "Communities" : ["For Artists", "Developers", "Advertising", "Investors", "Vendors"],
-  "Useful Links" : ['Support', "Free Mobile App"],
-  "Spotify Plans" : ['Premium Individual', "Premium Duo", "Premium Family", "Premium Student", "Spotify Free"]
-}
+const base: { [key: string]: Array<string> } = {
+  Company: ["About", "Jobs", "For the Record"],
+  Communities: [
+    "For Artists",
+    "Developers",
+    "Advertising",
+    "Investors",
+    "Vendors",
+  ],
+  "Useful Links": ["Support", "Free Mobile App"],
+  "Spotify Plans": [
+    "Premium Individual",
+    "Premium Duo",
+    "Premium Family",
+    "Premium Student",
+    "Spotify Free",
+  ],
+};
 
 const Rightupper = () => {
   return (
@@ -275,23 +287,64 @@ const Rightupper = () => {
         </div>
         <PopularArtists artistArr={artistArr} name="Popular Artists" />
         <PopularAlbums albumArr={albumArr} name="Popular Albums" />
-        <PopularRadio radioArr={radioArr} name="Popular Radio"/>
-        <FeaturedCharts featuredArr={featuredArr} name="Featured Charts"/>
+        <PopularRadio radioArr={radioArr} name="Popular Radio" />
+        <FeaturedCharts featuredArr={featuredArr} name="Featured Charts" />
         <SpotifyPlaylists playlistArr={playlistArr} name="Main Playlists" />
-        <Podcasts podcastArr={podcastArr} name="Main Podcasts"/>
-        <Episodes trendingArr={trendingArr} name="Trending Episodes"/>
+        <Podcasts podcastArr={podcastArr} name="Main Podcasts" />
+        <Episodes trendingArr={trendingArr} name="Trending Episodes" />
 
-        
         {/* right-section footer part */}
-        <div className="right-footer w-full mt-14 h-fit mb-5">
-            <div className="w-full h-fit flex flex-col flex-wrap mb-5">
-              <div className="gmenu h-fit w-[60%] grid grid-cols-4">
-                {/* TODO : need to upadate this part */}
+        <div className="right-footer w-full mt-14 h-fit mb-9">
+          <div className="w-full h-fit flex flex-row flex-wrap mb-5 justify-between">
+            <div className="gmenu h-fit w-[65%] grid grid-cols-4 gap-[5.5rem] pl-[1.3rem]">
+              <div className="text-white flex flex-col gap-3">
+                <div className="text-xl font-semibold">Company</div>
+                {base["Company"].map((e) => (
+                  <div className="text-sm text-[#7f7f7f] hover:underline hover:text-white">
+                    {e}
+                  </div>
+                ))}
               </div>
-              <div className="ficons h-fit w-[60%]"></div>
+              <div className="text-white flex flex-col gap-3">
+                <div className="text-xl font-semibold">Communities</div>
+                {base["Communities"].map((e) => (
+                  <div className="text-sm text-[#7f7f7f] hover:underline hover:text-white">
+                    {e}
+                  </div>
+                ))}
+              </div>
+              <div className="text-white flex flex-col gap-3">
+                <div className="text-xl font-semibold">Useful Links</div>
+                {base["Useful Links"].map((e) => (
+                  <div className="text-sm text-[#7f7f7f] hover:underline hover:text-white">
+                    {e}
+                  </div>
+                ))}
+              </div>
+              <div className="text-white flex flex-col gap-3">
+                <div className="text-xl font-semibold">Spotify Plans</div>
+                {base["Spotify Plans"].map((e) => (
+                  <div className="text-sm text-[#7f7f7f] hover:underline hover:text-white">
+                    {e}
+                  </div>
+                ))}
+              </div>
             </div>
+            <div className="ficons h-fit w-fit flex flex-row flex-wrap gap-4">
+              <div className="w-fit h-fit rounded-full p-3 bg-[#292929] hover:bg-[#555555]">
+                <FaInstagram className="text-white text-xl" />
+              </div>
+              <div className="w-fit h-fit rounded-full p-3 bg-[#292929] hover:bg-[#555555]">
+                <FaTwitter className="text-white text-xl" />
+              </div>
+              <div className="w-fit h-fit rounded-full p-3 bg-[#292929] hover:bg-[#555555]">
+                <FaFacebook className="text-white text-xl" />
+              </div>
+            </div>
+          </div>
         </div>
-        {/* make all the parts containerized */}
+        <div className="hline w-[full h-[1px] bg-white m-auto opacity-30"></div>
+        {/* TODO : The music audio playback section in the footer tab */}
       </div>
     </>
   );
