@@ -264,7 +264,7 @@ const base: { [key: string]: Array<string> } = {
 const Rightupper = () => {
   return (
     <>
-      <div className="w-full h-[86%] border-[0.5px] border-[#404040] bg-gradient-to-b from-[#1d1d1d] via-[#0a0a0a] to-[#121212] rounded-lg overflow-y-auto hide-scrollbar mb-2 px-5 py-3">
+      <div className="w-full h-[89%] border-[0.5px] border-[#404040] bg-gradient-to-b from-[#1d1d1d] via-[#0a0a0a] to-[#121212] rounded-lg overflow-y-auto hide-scrollbar mb-2 px-5 py-3">
         {/* right nav div */}
         <div className="right-nav w-full h-fit flex flex-row flex-wrap justify-between items-center mb-3">
           <div className="right-menu h-fit w-fit flex flex-wrap flex-row gap-3">
@@ -285,6 +285,7 @@ const Rightupper = () => {
             <BsFilterSquare className="text-xl cursor-pointer hover:text-white text-[#898989]" />
           </div>
         </div>
+        {/* importing the sections */}
         <PopularArtists artistArr={artistArr} name="Popular Artists" />
         <PopularAlbums albumArr={albumArr} name="Popular Albums" />
         <PopularRadio radioArr={radioArr} name="Popular Radio" />
